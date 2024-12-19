@@ -1,0 +1,166 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+header {
+
+    display: flex;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    margin: 20px;
+    padding: 20px;
+
+    justify-content: center;
+
+}
+
+nav {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+
+    margin: 20px;
+    padding: 20px;
+
+}
+
+main {
+    
+    border: 2px solid black;
+    border-radius: 20px;
+
+    margin: 20px;
+    padding: 20px;
+
+    justify-content: center;
+}
+
+article {
+
+
+    border: 2px solid black;
+    border-radius: 20px;
+
+    margin: 20px;
+    padding: 20px;
+
+}
+
+footer {
+
+    display: flex;
+
+    border: 2px solid black;
+    border-radius: 20px;
+
+    margin: 20px;
+    padding: 20px;
+
+    justify-content: center;
+
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 25vh 70vh 25vh;
+
+    }
+
+    header {
+        grid-column: 1 / 3;
+
+        
+    }
+
+    main {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+        overflow: hidden;
+
+        min-height: auto;
+        max-height: 2000px;
+
+        
+    }
+
+    article {
+        box-sizing: border-box;
+        overflow: hidden;
+
+        
+
+    }
+
+    footer {
+        grid-column: 1 / 3;
+        grid-row: 3 / 3;
+        
+    }
+    
+}
+
+@media screen and (min-width: 1024px) and (max-width: 20000px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 20vh 70vh 15vh;
+
+    }
+
+    header {
+        grid-column: 1 / 3;
+
+        min-height: 60px;
+        max-height: 300px;
+    }
+
+    main {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100vh;
+
+        overflow: hidden;
+
+        min-height: 300px;
+        max-height: 400px;
+    }
+
+    article {
+    
+
+        box-sizing: border-box;
+        overflow: hidden;
+
+        max-height: 280px;
+        min-height: 280px;
+
+    }
+
+    footer {
+        grid-column: 1 / 3;
+        grid-row: 3 / 3;
+
+        min-height: 100px;
+        max-height: 400px;
+    }
+
+
+}
